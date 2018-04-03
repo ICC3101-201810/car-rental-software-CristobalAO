@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Laboratorio3
 {
-    public class Empresa
+    public class Empresa:Cliente
     {
         public string nombre, ubicacion;
-        public Empresa (string _nombre, string _ubicacion)
+        public Empresa (string _nombre, string _ubicacion, int _numero):base( _numero)
         {
             nombre = _nombre;
             ubicacion = _ubicacion;

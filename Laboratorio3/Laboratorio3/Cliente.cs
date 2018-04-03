@@ -8,21 +8,18 @@ namespace Laboratorio3
 {
     public class Cliente
     {
-        public Persona persona;
-        public Empresa empresa;
-        public string licencia;
+        public int numero;
         public Vehiculos arrienda;
         public List<Vehiculos> vehiculos = new List<Vehiculos>();
-        public Cliente (Persona _persona, Empresa _empresa , string _licencia)
+        public Cliente (int _numero)
         {
             vehiculos.Add(arrienda);
-            licencia = null;
-            if (_empresa == null)
-            {
-                licencia = _licencia;
-            }
-            persona = _persona;
-            empresa = _empresa;
+            numero = _numero;
+        }
+        public void Arrienda()
+        {
+            Console.WriteLine("Que tipo de vehiculo desea arrendar? ");
+            string tipo = Console.ReadLine().ToString();
         }
     }
 }

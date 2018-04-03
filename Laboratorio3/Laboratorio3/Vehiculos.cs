@@ -18,9 +18,10 @@ namespace Laboratorio3
         public void AnadirTipo()
         {
             Console.WriteLine("Que tipo de vehiculo es? ");
-            Console.Read();
+            string tipo = Console.ReadLine().ToString();
             Console.WriteLine("Que costo tendra? ");
-            Console.Read();
+            int costo = Convert.ToInt32(Console.ReadLine());
+            new Vehiculos(tipo,costo);
         }
     }
 }
