@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Laboratorio3
 {
-    public class Persona
+    public class Empresa
     {
-        public string nombre, rut;
-        public Persona (string _nombre, string _rut)
+        public string nombre, ubicacion;
+        public Empresa (string _nombre, string _ubicacion)
         {
             nombre = _nombre;
-            rut = _rut;
+            ubicacion = _ubicacion;
         }
     }
 }
