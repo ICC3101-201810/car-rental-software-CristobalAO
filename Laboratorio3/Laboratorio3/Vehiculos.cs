@@ -8,20 +8,15 @@ namespace Laboratorio3
 {
     public class Vehiculos
     {
-        public string tipo;
-        public int costo;
-        public Vehiculos (string _tipo, int  _costo)
+        public string patente, licencia;
+        public int costo, ano;
+        public Vehiculos (string _patente, int  _costo, int _ano, string _licencia)
         {
-            tipo = _tipo;
+            ano = _ano;
+            patente = _patente;
             costo = _costo;
+            licencia = _licencia;
         }
-        public void AnadirTipo()
-        {
-            Console.WriteLine("Que tipo de vehiculo es? ");
-            string tipo = Console.ReadLine().ToString();
-            Console.WriteLine("Que costo tendra? ");
-            int costo = Convert.ToInt32(Console.ReadLine());
-            new Vehiculos(tipo,costo);
-        }
+       
     }
 }

@@ -43,6 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accesorios.cs" />
+    <Compile Include="Arriendo.cs" />
+    <Compile Include="Vehiculos\MaquinariaPesada.cs" />
+    <Compile Include="Vehiculos\Acuatico.cs" />
+    <Compile Include="Vehiculos\Bus.cs" />
+    <Compile Include="Vehiculos\Camion.cs" />
+    <Compile Include="Vehiculos\Moto.cs" />
+    <Compile Include="Vehiculos\Auto.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Empresa.cs" />
     <Compile Include="Persona.cs" />

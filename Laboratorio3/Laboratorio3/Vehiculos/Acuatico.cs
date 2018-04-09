@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Laboratorio3
 {
-    public class Cliente
+    public class Acuatico:Vehiculos
     {
-        public int numero;
-        public Cliente (int _numero)
+        public Acuatico(string _patente, int _costo, int _ano, string _licencia):base( _patente,   _costo,  _ano,  _licencia)
         {
-            numero = _numero;
+
         }
-        
     }
 }
