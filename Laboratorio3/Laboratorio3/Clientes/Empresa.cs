@@ -8,11 +8,11 @@ namespace Laboratorio3
 {
     public class Empresa:Cliente
     {
-        public string nombre, ubicacion;
-        public Empresa (string _nombre, string _ubicacion, int _numero):base( _numero)
+        public string  ubicacion;
+        public Empresa (string _nombre, string _ubicacion, int _numero, bool permisoBus, bool permisoMP) : base(_nombre,_numero, permisoBus,permisoMP)
         {
-            nombre = _nombre;
             ubicacion = _ubicacion;
         }
+
     }
 }

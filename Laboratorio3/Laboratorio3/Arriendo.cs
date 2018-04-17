@@ -10,10 +10,10 @@ namespace Laboratorio3
     {
         Cliente cliente;
         Sucursal sucursal;
-        Vehiculos vehiculo;
+        public Vehiculos vehiculo;
         DateTime dia, termino;
-        List<Accesorios> accesorios;
-        public Arriendo (Cliente _cliente, Sucursal _sucursal, Vehiculos _vehiculo, DateTime _dia, DateTime _termino)
+        public List<Accesorios> accesorios;
+        public Arriendo ( Cliente _cliente, Sucursal _sucursal, Vehiculos _vehiculo, DateTime _dia, DateTime _termino)
         {
             cliente = _cliente;
             sucursal = _sucursal;
@@ -21,16 +21,9 @@ namespace Laboratorio3
             dia = _dia;
             termino = _termino;
             accesorios = new List<Accesorios>();
-        }
-        public void Arrendar(Cliente cliente, Vehiculos vehiculo, Sucursal sucursal,DateTime fecha, DateTime termino)
-        {
-            Arriendo ArriendoGenerico = new Arriendo(cliente , sucursal, vehiculo, fecha, termino);
-        }
-        public void AnadirAccesorios (Accesorios accesorio, Arriendo arriendo)
-        {
-            accesorios.Add(accesorio);
-        }
 
+        }
+        
     }
     
 }

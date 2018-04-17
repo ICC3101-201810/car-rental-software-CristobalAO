@@ -8,12 +8,10 @@ namespace Laboratorio3
 {
     public class Persona:Cliente
     {
-        public string nombre, rut,licencia;
-        public Persona (string _nombre, string _rut, string _licencia, int _numero) : base(_numero)
+        public string  rut;
+        public Persona (string _nombre, string _rut, int _numero, bool permisoBus, bool permisoMP) : base(_nombre,_numero, permisoBus, permisoMP)
         {
-            nombre = _nombre;
             rut = _rut;
-            licencia = _licencia;
         }
     }
 }

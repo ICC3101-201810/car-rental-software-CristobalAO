@@ -17,6 +17,6 @@ namespace Laboratorio3
             costo = _costo;
             licencia = _licencia;
         }
-       
+        
     }
 }
